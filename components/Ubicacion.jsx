@@ -1,3 +1,5 @@
+'use client'
+
 const Ubicacion = () => {
   return (
     <section className="mt-6">

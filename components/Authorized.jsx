@@ -1,10 +1,12 @@
+'use client'
+
 import { authorized } from "../constants";
+
 const Authorized = () => {
+  
   return (
     <section className="authorized w-full px-10 pt-6">
-        <h1 className="w-full text-black font-poppins italic uppercase py-2 text-2xl">
-          Autorizado por
-        </h1>
+        <h1 className="w-full text-black font-poppins italic uppercase py-2 text-2xl">Autorizado por </h1>
         <div className="w-full bg-gray-100 py-6">
         <div className="flex justify-center items-center flex-wrap sm:flex-nowrap">
           {authorized.map((el) => (

@@ -1,4 +1,7 @@
+'use client'
+
 const Footer = () => {
+  
   return (
     <section className="footer mt-6 px-6 bg-black">
       <div className="py-5 text-white flex justify-between items-center">
