@@ -10,7 +10,26 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Carousel = () => {
+    const [slidesPerView, setSlidesPerView] = useState(4);
+
+    //choose the screen size 
     
+    // create an event listener
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 860  && window.innerWidth >= 680 ) {
+                setSlidesPerView(3)
+            }
+            else if (window.innerWidth < 680){
+                setSlidesPerView(2)
+            }
+            else {
+                setSlidesPerView(4)
+            }
+        }
+        window.addEventListener("resize", handleResize)
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
 
     return (
