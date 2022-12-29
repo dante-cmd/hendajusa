@@ -20,8 +20,11 @@ const Carousel = () => {
             if (window.innerWidth < 860  && window.innerWidth >= 680 ) {
                 setSlidesPerView(3)
             }
-            else if (window.innerWidth < 680){
+            else if (window.innerWidth >= 400 &&  window.innerWidth < 680){
                 setSlidesPerView(2)
+            }
+            else if (window.innerWidth < 400){
+                setSlidesPerView(1)
             }
             else {
                 setSlidesPerView(4)
@@ -36,8 +39,8 @@ const Carousel = () => {
         <>
         <Swiper
           slidesPerView={slidesPerView}
-          spaceBetween={6}
-          slidesPerGroup={3}
+          spaceBetween={1}
+          slidesPerGroup={1}
           pagination={{
             clickable: true,
           }}
