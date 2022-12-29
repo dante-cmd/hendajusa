@@ -35,7 +35,7 @@ const Carousel = () => {
     return (
         <>
         <Swiper
-          slidesPerView={4}
+          slidesPerView={slidesPerView}
           spaceBetween={6}
           slidesPerGroup={3}
           pagination={{
